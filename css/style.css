@@ -37,7 +37,7 @@
     border-radius: 50%;
     filter: grayscale(100%) brightness(70%);
     object-fit: cover;
-    border: 4px solid #046C78;
+    border: 4px solid #505202;
   }
   
   .backcolor {
@@ -45,7 +45,7 @@
     width: 150px; 
     height: 150px; 
     border-radius: 50%;
-    background: #0791A6; 
+    background: #f4ffb7; 
     mix-blend-mode: overlay;
   }
 
@@ -64,6 +64,15 @@
     font-style: normal;
     color: #666;
   }
+
+  .title2 {
+    font-size: 1.1rem;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+    line-height: 2;
+  }
   
   .phone,
   .company {
@@ -77,11 +86,17 @@
   
   /* Medium Screens (Tablet and Large Mobile) */
   @media (min-width: 500px) {
+    body {
+    background-color: aquamarine;
+    }
+
     .contact-card {
-      max-width: 500px;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
+    max-width: 500px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     }
   
     .profile-img {
@@ -97,12 +112,17 @@
     .details {
       text-align: left;
     }
+    
   }
   
   /* Large Screens (Desktop) */
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
+    body {
+      background-color: antiquewhite;
+    }
+
     .contact-card {
-      max-width: 768px;
+      max-width: 800px;
       justify-content: space-between;
       padding: 30px;
     }
