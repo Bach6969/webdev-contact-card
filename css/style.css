@@ -49,6 +49,11 @@
     mix-blend-mode: overlay;
   }
 
+  .container2 {
+    align-items: center;
+    text-align: center;
+  }
+
   .info {
     display: flex;
     flex-direction: column;
@@ -98,6 +103,11 @@
 
     .contact-card {
       max-width: 500px;
+    }
+
+    .container2 {
+      align-items: center;
+      text-align: center;
     }
 
     .container {
@@ -156,7 +166,8 @@
     }
 
     .container2 {
-      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
   
     .name {
